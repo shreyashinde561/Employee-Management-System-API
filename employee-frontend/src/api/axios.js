@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "http://localhost:5000/api", // ✅ FIXED PORT
+  baseURL: "https://employee-management-system-api-42ze.onrender.com/api",
   headers: {
     "Content-Type": "application/json",
   },
