@@ -8,78 +8,72 @@ using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
-#region CONTROLLERS + API EXPLORER
-
-builder.Services.AddControllers();
-builder.Services.AddEndpointsApiExplorer();
-
+#region 🌐 PORT CONFIG (FOR RENDER / CLOUD DEPLOYMENT)
+var port = Environment.GetEnvironmentVariable("PORT") ?? "5000";
+builder.WebHost.UseUrls($"http://0.0.0.0:{port}");
 #endregion
 
-#region DATABASE
+#region CONTROLLERS + API EXPLORER
+builder.Services.AddControllers();
+builder.Services.AddEndpointsApiExplorer();
+#endregion
 
+#region DATABASE (SQLite - OK for demo, upgrade later to SQL Server)
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection"))
 );
-
 #endregion
 
 #region DEPENDENCY INJECTION
-
 builder.Services.AddScoped<JwtService>();
 builder.Services.AddScoped<EmployeeService>();
-
 #endregion
 
-#region CORS POLICY (IMPORTANT)
-
+#region CORS (SECURE FOR FRONTEND)
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy("AllowAll", policy =>
+    options.AddPolicy("AllowFrontend", policy =>
     {
-        policy
-            .AllowAnyOrigin()
+        policy.WithOrigins(
+                "http://localhost:3000"
+            )
             .AllowAnyHeader()
             .AllowAnyMethod();
     });
 });
-
 #endregion
 
 #region JWT AUTHENTICATION
-
 var jwtSection = builder.Configuration.GetSection("Jwt");
 var key = Encoding.UTF8.GetBytes(jwtSection["Key"]!);
 
-builder.Services
-    .AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
-    .AddJwtBearer(options =>
+builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+.AddJwtBearer(options =>
+{
+    options.TokenValidationParameters = new TokenValidationParameters
     {
-        options.TokenValidationParameters = new TokenValidationParameters
-        {
-            ValidateIssuer = true,
-            ValidateAudience = true,
-            ValidateLifetime = true,
-            ValidateIssuerSigningKey = true,
+        ValidateIssuer = true,
+        ValidateAudience = true,
+        ValidateLifetime = true,
+        ValidateIssuerSigningKey = true,
 
-            ValidIssuer = jwtSection["Issuer"],
-            ValidAudience = jwtSection["Audience"],
-            IssuerSigningKey = new SymmetricSecurityKey(key)
-        };
-    });
+        ValidIssuer = jwtSection["Issuer"],
+        ValidAudience = jwtSection["Audience"],
+        IssuerSigningKey = new SymmetricSecurityKey(key)
+    };
+});
 
 builder.Services.AddAuthorization();
-
 #endregion
 
-#region SWAGGER CONFIG + JWT SUPPORT
-
+#region SWAGGER + JWT SUPPORT
 builder.Services.AddSwaggerGen(c =>
 {
     c.SwaggerDoc("v1", new OpenApiInfo
     {
         Title = "EmployeeAPI",
         Version = "v1",
-        Description = "Employee Management System API"
+        Description = "Employee Management System API (Production Ready)"
     });
 
     c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
@@ -89,7 +83,7 @@ builder.Services.AddSwaggerGen(c =>
         Scheme = "Bearer",
         BearerFormat = "JWT",
         In = ParameterLocation.Header,
-        Description = "Enter token like: Bearer {your token}"
+        Description = "Enter: Bearer {your JWT token}"
     });
 
     c.AddSecurityRequirement(new OpenApiSecurityRequirement
@@ -107,28 +101,25 @@ builder.Services.AddSwaggerGen(c =>
         }
     });
 });
-
 #endregion
 
 var app = builder.Build();
 
-#region PIPELINE (ORDER MATTERS 🔥)
-
+#region PIPELINE
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
 }
 
-app.UseCors("AllowAll");   // ✅ MUST be before auth
+app.UseCors("AllowFrontend");
 
-app.UseHttpsRedirection(); // (optional but good)
+app.UseHttpsRedirection();
 
 app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();
-
 #endregion
 
 app.Run();
