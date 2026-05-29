@@ -10,6 +10,10 @@ namespace EmployeeAPI.Data
         {
         }
 
+        // Employees table
         public DbSet<Employee> Employees { get; set; }
+
+        // Users table (JWT LOGIN/REGISTER ke liye IMPORTANT)
+        public DbSet<User> Users { get; set; }
     }
 }

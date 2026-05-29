@@ -1,33 +1,108 @@
-using Microsoft.AspNetCore.Mvc;
-using EmployeeAPI.Data;
 using EmployeeAPI.Models;
-using Microsoft.EntityFrameworkCore;
+using EmployeeAPI.Services;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 
 namespace EmployeeAPI.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
+    [Authorize] // 🔐 JWT REQUIRED FOR ALL ENDPOINTS
     public class EmployeeController : ControllerBase
     {
-        private readonly AppDbContext _context;
+        private readonly EmployeeService _service;
 
-        public EmployeeController(AppDbContext context)
+        public EmployeeController(EmployeeService service)
         {
-            _context = context;
+            _service = service;
         }
 
+        // ================= CREATE EMPLOYEE =================
         [HttpPost]
-        public async Task<IActionResult> Create(Employee emp)
+        [Authorize(Roles = "Admin")] // 🔐 ONLY ADMIN
+        public async Task<IActionResult> Create([FromBody] Employee emp)
         {
-            _context.Employees.Add(emp);
-            await _context.SaveChangesAsync();
-            return Ok(emp);
+            if (emp == null)
+                return BadRequest(new { message = "Employee data is required" });
+
+            var result = await _service.Create(emp);
+
+            return Ok(new
+            {
+                message = "Employee created successfully",
+                data = result
+            });
         }
 
+        // ================= GET ALL EMPLOYEES =================
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
-            return Ok(await _context.Employees.ToListAsync());
+            var employees = await _service.GetAll();
+
+            return Ok(new
+            {
+                count = employees.Count,
+                data = employees
+            });
+        }
+
+        // ================= GET BY ID =================
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetById(int id)
+        {
+            var emp = await _service.GetById(id);
+
+            if (emp == null)
+                return NotFound(new { message = "Employee not found" });
+
+            return Ok(new
+            {
+                data = emp
+            });
+        }
+
+        // ================= UPDATE EMPLOYEE =================
+        [HttpPut("{id}")]
+        [Authorize(Roles = "Admin")] // 🔐 ONLY ADMIN
+        public async Task<IActionResult> Update(int id, [FromBody] Employee updatedEmp)
+        {
+            if (updatedEmp == null)
+                return BadRequest(new { message = "Invalid data" });
+
+            var emp = await _service.GetById(id);
+
+            if (emp == null)
+                return NotFound(new { message = "Employee not found" });
+
+            emp.Name = updatedEmp.Name;
+            emp.Department = updatedEmp.Department;
+            emp.Email = updatedEmp.Email;
+            emp.Salary = updatedEmp.Salary;
+
+            await _service.Update(emp);
+
+            return Ok(new
+            {
+                message = "Employee updated successfully",
+                data = emp
+            });
+        }
+
+        // ================= DELETE EMPLOYEE =================
+        [HttpDelete("{id}")]
+        [Authorize(Roles = "Admin")] // 🔐 ONLY ADMIN
+        public async Task<IActionResult> Delete(int id)
+        {
+            var success = await _service.Delete(id);
+
+            if (!success)
+                return NotFound(new { message = "Employee not found" });
+
+            return Ok(new
+            {
+                message = "Employee deleted successfully"
+            });
         }
     }
 }
