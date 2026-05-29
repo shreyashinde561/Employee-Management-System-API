@@ -19,6 +19,24 @@ https://employee-management-system-api-42ze.onrender.com/swagger
 https://github.com/shreyashinde561/Employee-Management-System-API
 
 ---
+# 📸 Application Screenshots
+
+## 🔐 Login Page
+
+<img width="1914" height="970" alt="Screenshot 2026-05-29 151728" src="https://github.com/user-attachments/assets/16371ce6-f2c0-4e3c-872a-033f2340bc41" />
+
+## 📋 Employee Dashboard
+
+<img width="1908" height="947" alt="Screenshot 2026-05-29 152027" src="https://github.com/user-attachments/assets/d08262ae-8934-49c1-aeb0-3a5a8ca3c8f2" />
+
+## ➕ Add Employee
+
+<img width="1908" height="962" alt="Screenshot 2026-05-29 152110" src="https://github.com/user-attachments/assets/33879497-8646-45a0-be0b-7c00c03c17e9" />
+
+## 🌐 Swagger API
+
+<img width="1919" height="972" alt="Screenshot 2026-05-29 152540" src="https://github.com/user-attachments/assets/9a2cdf72-611b-418a-9df8-421c39cc0790" />
+
 
 # 🚀 Features
 
