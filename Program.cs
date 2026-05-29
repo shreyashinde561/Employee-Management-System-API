@@ -30,7 +30,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 #endregion
 
-#region DATABASE (FIXED FOR PRODUCTION)
+#region DATABASE
 builder.Services.AddDbContext<AppDbContext>(options =>
 {
     var dbPath = Path.Combine(AppContext.BaseDirectory, "employee.db");
@@ -43,7 +43,7 @@ builder.Services.AddScoped<JwtService>();
 builder.Services.AddScoped<EmployeeService>();
 #endregion
 
-#region CORS (PRODUCTION SAFE)
+#region CORS
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowFrontend", policy =>
@@ -78,7 +78,7 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
 builder.Services.AddAuthorization();
 #endregion
 
-#region SWAGGER (ALWAYS ON)
+#region SWAGGER
 builder.Services.AddSwaggerGen(c =>
 {
     c.SwaggerDoc("v1", new OpenApiInfo
@@ -107,13 +107,21 @@ builder.Services.AddSwaggerGen(c =>
                     Id = "Bearer"
                 }
             },
-            new string[] {}
+            Array.Empty<string>()
         }
     });
 });
 #endregion
 
 var app = builder.Build();
+
+#region 🔥 AUTO DATABASE MIGRATION
+using (var scope = app.Services.CreateScope())
+{
+    var db = scope.ServiceProvider.GetRequiredService<AppDbContext>();
+    db.Database.Migrate();
+}
+#endregion
 
 #region PIPELINE
 app.UseMiddleware<ExceptionMiddleware>();
@@ -125,7 +133,6 @@ app.UseSerilogRequestLogging();
 
 app.UseCors("AllowFrontend");
 
-// ❌ REMOVE in production (Render handles HTTPS)
 // app.UseHttpsRedirection();
 
 app.UseAuthentication();
