@@ -10,13 +10,12 @@ using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
-#region 🌐 PORT CONFIG (LOCAL + CLOUD SAFE)
+#region 🌐 PORT CONFIG (RENDER SAFE)
 var port = Environment.GetEnvironmentVariable("PORT") ?? "5000";
-
 builder.WebHost.UseUrls($"http://0.0.0.0:{port}");
 #endregion
 
-#region 🔥 SERILOG CONFIG
+#region 🔥 SERILOG
 Log.Logger = new LoggerConfiguration()
     .MinimumLevel.Information()
     .WriteTo.Console()
@@ -26,39 +25,38 @@ Log.Logger = new LoggerConfiguration()
 builder.Host.UseSerilog();
 #endregion
 
-#region CONTROLLERS + API EXPLORER
+#region CONTROLLERS
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 #endregion
 
-#region DATABASE (SQLite)
+#region DATABASE (FIXED FOR PRODUCTION)
 builder.Services.AddDbContext<AppDbContext>(options =>
-    options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection"))
-);
+{
+    var dbPath = Path.Combine(AppContext.BaseDirectory, "employee.db");
+    options.UseSqlite($"Data Source={dbPath}");
+});
 #endregion
 
-#region DEPENDENCY INJECTION
+#region DI
 builder.Services.AddScoped<JwtService>();
 builder.Services.AddScoped<EmployeeService>();
 #endregion
 
-#region CORS (🔥 FIXED FOR FRONTEND)
+#region CORS (PRODUCTION SAFE)
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowFrontend", policy =>
     {
         policy
-            .WithOrigins(
-                "http://localhost:3000",
-                "http://127.0.0.1:3000"
-            )
+            .AllowAnyOrigin()
             .AllowAnyHeader()
             .AllowAnyMethod();
     });
 });
 #endregion
 
-#region JWT AUTH
+#region JWT
 var jwtSection = builder.Configuration.GetSection("Jwt");
 var key = Encoding.UTF8.GetBytes(jwtSection["Key"]!);
 
@@ -71,7 +69,6 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
         ValidateAudience = true,
         ValidateLifetime = true,
         ValidateIssuerSigningKey = true,
-
         ValidIssuer = jwtSection["Issuer"],
         ValidAudience = jwtSection["Audience"],
         IssuerSigningKey = new SymmetricSecurityKey(key)
@@ -81,14 +78,13 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
 builder.Services.AddAuthorization();
 #endregion
 
-#region SWAGGER + JWT SUPPORT
+#region SWAGGER (ALWAYS ON)
 builder.Services.AddSwaggerGen(c =>
 {
     c.SwaggerDoc("v1", new OpenApiInfo
     {
         Title = "EmployeeAPI",
-        Version = "v1",
-        Description = "Production Ready Employee Management API"
+        Version = "v1"
     });
 
     c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
@@ -97,8 +93,7 @@ builder.Services.AddSwaggerGen(c =>
         Type = SecuritySchemeType.Http,
         Scheme = "Bearer",
         BearerFormat = "JWT",
-        In = ParameterLocation.Header,
-        Description = "Enter: Bearer {your JWT token}"
+        In = ParameterLocation.Header
     });
 
     c.AddSecurityRequirement(new OpenApiSecurityRequirement
@@ -112,7 +107,7 @@ builder.Services.AddSwaggerGen(c =>
                     Id = "Bearer"
                 }
             },
-            Array.Empty<string>()
+            new string[] {}
         }
     });
 });
@@ -123,17 +118,15 @@ var app = builder.Build();
 #region PIPELINE
 app.UseMiddleware<ExceptionMiddleware>();
 
-if (app.Environment.IsDevelopment())
-{
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}
+app.UseSwagger();
+app.UseSwaggerUI();
 
 app.UseSerilogRequestLogging();
 
 app.UseCors("AllowFrontend");
 
-app.UseHttpsRedirection();
+// ❌ REMOVE in production (Render handles HTTPS)
+// app.UseHttpsRedirection();
 
 app.UseAuthentication();
 app.UseAuthorization();
