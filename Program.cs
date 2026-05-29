@@ -1,16 +1,29 @@
 using EmployeeAPI.Data;
 using EmployeeAPI.Services;
+using EmployeeAPI.Middleware;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
+using Serilog;
 using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
-#region 🌐 PORT CONFIG (FOR RENDER / CLOUD DEPLOYMENT)
+#region 🌐 PORT CONFIG (LOCAL + CLOUD SAFE)
 var port = Environment.GetEnvironmentVariable("PORT") ?? "5000";
+
 builder.WebHost.UseUrls($"http://0.0.0.0:{port}");
+#endregion
+
+#region 🔥 SERILOG CONFIG
+Log.Logger = new LoggerConfiguration()
+    .MinimumLevel.Information()
+    .WriteTo.Console()
+    .WriteTo.File("Logs/log-.txt", rollingInterval: RollingInterval.Day)
+    .CreateLogger();
+
+builder.Host.UseSerilog();
 #endregion
 
 #region CONTROLLERS + API EXPLORER
@@ -18,7 +31,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 #endregion
 
-#region DATABASE (SQLite - OK for demo, upgrade later to SQL Server)
+#region DATABASE (SQLite)
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection"))
 );
@@ -29,13 +42,15 @@ builder.Services.AddScoped<JwtService>();
 builder.Services.AddScoped<EmployeeService>();
 #endregion
 
-#region CORS (SECURE FOR FRONTEND)
+#region CORS (🔥 FIXED FOR FRONTEND)
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowFrontend", policy =>
     {
-        policy.WithOrigins(
-                "http://localhost:3000"
+        policy
+            .WithOrigins(
+                "http://localhost:3000",
+                "http://127.0.0.1:3000"
             )
             .AllowAnyHeader()
             .AllowAnyMethod();
@@ -43,7 +58,7 @@ builder.Services.AddCors(options =>
 });
 #endregion
 
-#region JWT AUTHENTICATION
+#region JWT AUTH
 var jwtSection = builder.Configuration.GetSection("Jwt");
 var key = Encoding.UTF8.GetBytes(jwtSection["Key"]!);
 
@@ -73,7 +88,7 @@ builder.Services.AddSwaggerGen(c =>
     {
         Title = "EmployeeAPI",
         Version = "v1",
-        Description = "Employee Management System API (Production Ready)"
+        Description = "Production Ready Employee Management API"
     });
 
     c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
@@ -106,11 +121,15 @@ builder.Services.AddSwaggerGen(c =>
 var app = builder.Build();
 
 #region PIPELINE
+app.UseMiddleware<ExceptionMiddleware>();
+
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+app.UseSerilogRequestLogging();
 
 app.UseCors("AllowFrontend");
 

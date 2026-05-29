@@ -1,4 +1,4 @@
-using EmployeeAPI.Models;
+using EmployeeAPI.DTOs;
 using EmployeeAPI.Services;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -7,7 +7,7 @@ namespace EmployeeAPI.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    [Authorize] // 🔐 JWT REQUIRED FOR ALL ENDPOINTS
+    [Authorize]
     public class EmployeeController : ControllerBase
     {
         private readonly EmployeeService _service;
@@ -17,15 +17,15 @@ namespace EmployeeAPI.Controllers
             _service = service;
         }
 
-        // ================= CREATE EMPLOYEE =================
+        // ================= CREATE =================
         [HttpPost]
-        [Authorize(Roles = "Admin")] // 🔐 ONLY ADMIN
-        public async Task<IActionResult> Create([FromBody] Employee emp)
+        [Authorize(Roles = "Admin")]
+        public async Task<IActionResult> Create(EmployeeDto dto)
         {
-            if (emp == null)
-                return BadRequest(new { message = "Employee data is required" });
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
 
-            var result = await _service.Create(emp);
+            var result = await _service.CreateAsync(dto);
 
             return Ok(new
             {
@@ -34,11 +34,11 @@ namespace EmployeeAPI.Controllers
             });
         }
 
-        // ================= GET ALL EMPLOYEES =================
+        // ================= GET ALL =================
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
-            var employees = await _service.GetAll();
+            var employees = await _service.GetAllAsync();
 
             return Ok(new
             {
@@ -51,7 +51,7 @@ namespace EmployeeAPI.Controllers
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)
         {
-            var emp = await _service.GetById(id);
+            var emp = await _service.GetByIdAsync(id);
 
             if (emp == null)
                 return NotFound(new { message = "Employee not found" });
@@ -62,39 +62,32 @@ namespace EmployeeAPI.Controllers
             });
         }
 
-        // ================= UPDATE EMPLOYEE =================
+        // ================= UPDATE =================
         [HttpPut("{id}")]
-        [Authorize(Roles = "Admin")] // 🔐 ONLY ADMIN
-        public async Task<IActionResult> Update(int id, [FromBody] Employee updatedEmp)
+        [Authorize(Roles = "Admin")]
+        public async Task<IActionResult> Update(int id, EmployeeDto dto)
         {
-            if (updatedEmp == null)
-                return BadRequest(new { message = "Invalid data" });
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
 
-            var emp = await _service.GetById(id);
+            var updated = await _service.UpdateAsync(id, dto);
 
-            if (emp == null)
+            if (updated == null)
                 return NotFound(new { message = "Employee not found" });
-
-            emp.Name = updatedEmp.Name;
-            emp.Department = updatedEmp.Department;
-            emp.Email = updatedEmp.Email;
-            emp.Salary = updatedEmp.Salary;
-
-            await _service.Update(emp);
 
             return Ok(new
             {
                 message = "Employee updated successfully",
-                data = emp
+                data = updated
             });
         }
 
-        // ================= DELETE EMPLOYEE =================
+        // ================= DELETE =================
         [HttpDelete("{id}")]
-        [Authorize(Roles = "Admin")] // 🔐 ONLY ADMIN
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Delete(int id)
         {
-            var success = await _service.Delete(id);
+            var success = await _service.DeleteAsync(id);
 
             if (!success)
                 return NotFound(new { message = "Employee not found" });

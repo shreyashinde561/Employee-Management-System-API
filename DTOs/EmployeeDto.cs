@@ -1,14 +1,12 @@
-namespace EmployeeAPI.Models
+namespace EmployeeAPI.DTOs
 {
-    public class Employee
+    public class EmployeeDto
     {
-        public int Id { get; set; }
-
         public required string Name { get; set; }
         public required string Department { get; set; }
         public required string Email { get; set; }
 
-        // ✅ FIX: use decimal for money
+        // ✅ MUST MATCH MODEL TYPE
         public decimal Salary { get; set; }
     }
 }

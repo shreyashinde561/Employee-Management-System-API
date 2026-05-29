@@ -1,0 +1,583 @@
+2026-05-29 11:02:23.528 +05:30 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-05-29 11:02:23.774 +05:30 [INF] Now listening on: http://0.0.0.0:5000
+2026-05-29 11:02:23.781 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-29 11:02:23.783 +05:30 [INF] Hosting environment: Development
+2026-05-29 11:02:23.784 +05:30 [INF] Content root path: C:\Users\user\OneDrive\文件\Desktop\EmployeeAPI\EmployeeAPI
+2026-05-29 11:06:02.462 +05:30 [INF] Application is shutting down...
+2026-05-29 11:09:30.982 +05:30 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-05-29 11:09:31.202 +05:30 [INF] Now listening on: http://0.0.0.0:5000
+2026-05-29 11:09:31.208 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-29 11:09:31.210 +05:30 [INF] Hosting environment: Development
+2026-05-29 11:09:31.212 +05:30 [INF] Content root path: C:\Users\user\OneDrive\文件\Desktop\EmployeeAPI\EmployeeAPI
+2026-05-29 11:52:46.148 +05:30 [INF] Application is shutting down...
+2026-05-29 11:53:09.228 +05:30 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-05-29 11:53:09.441 +05:30 [INF] Now listening on: http://localhost:5000
+2026-05-29 11:53:09.447 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-29 11:53:09.449 +05:30 [INF] Hosting environment: Development
+2026-05-29 11:53:09.450 +05:30 [INF] Content root path: C:\Users\user\OneDrive\文件\Desktop\EmployeeAPI\EmployeeAPI
+2026-05-29 11:57:21.669 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger - null null
+2026-05-29 11:57:21.759 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger - 301 0 null 93.3171ms
+2026-05-29 11:57:21.797 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - null null
+2026-05-29 11:57:21.993 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - 200 null text/html;charset=utf-8 196.104ms
+2026-05-29 11:57:22.037 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui.css - null null
+2026-05-29 11:57:22.048 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui-standalone-preset.js - null null
+2026-05-29 11:57:22.048 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui-bundle.js - null null
+2026-05-29 11:57:22.095 +05:30 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2026-05-29 11:57:22.095 +05:30 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2026-05-29 11:57:22.102 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui.css - 200 152034 text/css 64.7819ms
+2026-05-29 11:57:22.102 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui-standalone-preset.js - 200 230280 text/javascript 54.2176ms
+2026-05-29 11:57:22.110 +05:30 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2026-05-29 11:57:22.119 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui-bundle.js - 200 1456926 text/javascript 70.6756ms
+2026-05-29 11:57:22.475 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - null null
+2026-05-29 11:57:22.506 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/favicon-32x32.png - null null
+2026-05-29 11:57:22.512 +05:30 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2026-05-29 11:57:22.515 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/favicon-32x32.png - 200 628 image/png 9.1188ms
+2026-05-29 11:57:22.663 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 187.3534ms
+2026-05-29 12:02:34.471 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/Auth/login - null null
+2026-05-29 12:02:34.492 +05:30 [INF] CORS policy execution successful.
+2026-05-29 12:02:34.499 +05:30 [INF] HTTP OPTIONS /api/Auth/login responded 204 in 11.4036 ms
+2026-05-29 12:02:34.504 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/Auth/login - 204 null null 32.5063ms
+2026-05-29 12:02:34.511 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Auth/login - application/json 46
+2026-05-29 12:02:34.518 +05:30 [INF] CORS policy execution successful.
+2026-05-29 12:02:34.521 +05:30 [WRN] Failed to determine the https port for redirect.
+2026-05-29 12:02:34.758 +05:30 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '29-05-2026 05:30:28', Current time (UTC): '29-05-2026 06:32:34'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2026-05-29 12:02:34.784 +05:30 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '29-05-2026 05:30:28', Current time (UTC): '29-05-2026 06:32:34'.
+2026-05-29 12:02:34.792 +05:30 [INF] Executing endpoint 'EmployeeAPI.API.Controllers.AuthController.Login (EmployeeAPI)'
+2026-05-29 12:02:34.844 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(EmployeeAPI.Application.DTOs.LoginDto) on controller EmployeeAPI.API.Controllers.AuthController (EmployeeAPI).
+2026-05-29 12:02:37.456 +05:30 [INF] Executed DbCommand (27ms) [Parameters=[@__request_Username_0='?' (Size = 13)], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."Password", "u"."RefreshToken", "u"."RefreshTokenExpiry", "u"."Role", "u"."Username"
+FROM "Users" AS "u"
+WHERE "u"."Username" = @__request_Username_0
+LIMIT 1
+2026-05-29 12:02:38.585 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType3`2[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[<>f__AnonymousType2`3[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], EmployeeAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-29 12:02:38.623 +05:30 [INF] Executed action EmployeeAPI.API.Controllers.AuthController.Login (EmployeeAPI) in 3770.3158ms
+2026-05-29 12:02:38.626 +05:30 [INF] Executed endpoint 'EmployeeAPI.API.Controllers.AuthController.Login (EmployeeAPI)'
+2026-05-29 12:02:38.628 +05:30 [INF] HTTP POST /api/Auth/login responded 200 in 4110.4596 ms
+2026-05-29 12:02:38.640 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Auth/login - 200 null application/json; charset=utf-8 4129.5301ms
+2026-05-29 12:02:40.468 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/Employee - null null
+2026-05-29 12:02:40.471 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/Employee - null null
+2026-05-29 12:02:40.475 +05:30 [INF] CORS policy execution successful.
+2026-05-29 12:02:40.477 +05:30 [INF] CORS policy execution successful.
+2026-05-29 12:02:40.479 +05:30 [INF] HTTP OPTIONS /api/Employee responded 204 in 4.4140 ms
+2026-05-29 12:02:40.480 +05:30 [INF] HTTP OPTIONS /api/Employee responded 204 in 2.8504 ms
+2026-05-29 12:02:40.486 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/Employee - 204 null null 14.4295ms
+2026-05-29 12:02:40.483 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/Employee - 204 null null 14.6023ms
+2026-05-29 12:02:40.500 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/Employee - null null
+2026-05-29 12:02:40.509 +05:30 [INF] CORS policy execution successful.
+2026-05-29 12:02:40.537 +05:30 [INF] Executing endpoint 'EmployeeAPI.Controllers.EmployeeController.GetAll (EmployeeAPI)'
+2026-05-29 12:02:40.547 +05:30 [INF] Route matched with {action = "GetAll", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller EmployeeAPI.Controllers.EmployeeController (EmployeeAPI).
+2026-05-29 12:02:40.605 +05:30 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "e"."Id", "e"."Department", "e"."Email", "e"."Name", "e"."Salary"
+FROM "Employees" AS "e"
+2026-05-29 12:02:40.630 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType5`2[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[EmployeeAPI.Models.Employee, EmployeeAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-29 12:02:40.654 +05:30 [INF] Executed action EmployeeAPI.Controllers.EmployeeController.GetAll (EmployeeAPI) in 103.3445ms
+2026-05-29 12:02:40.656 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/Employee - null null
+2026-05-29 12:02:40.657 +05:30 [INF] Executed endpoint 'EmployeeAPI.Controllers.EmployeeController.GetAll (EmployeeAPI)'
+2026-05-29 12:02:40.661 +05:30 [INF] CORS policy execution successful.
+2026-05-29 12:02:40.663 +05:30 [INF] HTTP GET /api/Employee responded 200 in 154.2374 ms
+2026-05-29 12:02:40.667 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/Employee - 200 null application/json; charset=utf-8 167.883ms
+2026-05-29 12:02:40.671 +05:30 [INF] Executing endpoint 'EmployeeAPI.Controllers.EmployeeController.GetAll (EmployeeAPI)'
+2026-05-29 12:02:40.676 +05:30 [INF] Route matched with {action = "GetAll", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller EmployeeAPI.Controllers.EmployeeController (EmployeeAPI).
+2026-05-29 12:02:40.787 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "e"."Id", "e"."Department", "e"."Email", "e"."Name", "e"."Salary"
+FROM "Employees" AS "e"
+2026-05-29 12:02:40.792 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType5`2[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[EmployeeAPI.Models.Employee, EmployeeAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-29 12:02:40.795 +05:30 [INF] Executed action EmployeeAPI.Controllers.EmployeeController.GetAll (EmployeeAPI) in 115.1993ms
+2026-05-29 12:02:40.797 +05:30 [INF] Executed endpoint 'EmployeeAPI.Controllers.EmployeeController.GetAll (EmployeeAPI)'
+2026-05-29 12:02:40.799 +05:30 [INF] HTTP GET /api/Employee responded 200 in 138.1543 ms
+2026-05-29 12:02:40.802 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/Employee - 200 null application/json; charset=utf-8 146.449ms
+2026-05-29 12:06:41.061 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/Employee - null null
+2026-05-29 12:06:41.063 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/Employee - null null
+2026-05-29 12:06:41.066 +05:30 [INF] CORS policy execution successful.
+2026-05-29 12:06:41.068 +05:30 [INF] CORS policy execution successful.
+2026-05-29 12:06:41.069 +05:30 [INF] HTTP OPTIONS /api/Employee responded 204 in 3.6708 ms
+2026-05-29 12:06:41.071 +05:30 [INF] HTTP OPTIONS /api/Employee responded 204 in 2.4522 ms
+2026-05-29 12:06:41.074 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/Employee - 204 null null 12.686ms
+2026-05-29 12:06:41.080 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/Employee - 204 null null 17.027ms
+2026-05-29 12:06:41.084 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/Employee - null null
+2026-05-29 12:06:41.092 +05:30 [INF] CORS policy execution successful.
+2026-05-29 12:06:41.100 +05:30 [INF] Executing endpoint 'EmployeeAPI.Controllers.EmployeeController.GetAll (EmployeeAPI)'
+2026-05-29 12:06:41.101 +05:30 [INF] Route matched with {action = "GetAll", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller EmployeeAPI.Controllers.EmployeeController (EmployeeAPI).
+2026-05-29 12:06:41.108 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "e"."Id", "e"."Department", "e"."Email", "e"."Name", "e"."Salary"
+FROM "Employees" AS "e"
+2026-05-29 12:06:41.112 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType5`2[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[EmployeeAPI.Models.Employee, EmployeeAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-29 12:06:41.115 +05:30 [INF] Executed action EmployeeAPI.Controllers.EmployeeController.GetAll (EmployeeAPI) in 11.766ms
+2026-05-29 12:06:41.117 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/Employee - null null
+2026-05-29 12:06:41.117 +05:30 [INF] Executed endpoint 'EmployeeAPI.Controllers.EmployeeController.GetAll (EmployeeAPI)'
+2026-05-29 12:06:41.121 +05:30 [INF] CORS policy execution successful.
+2026-05-29 12:06:41.122 +05:30 [INF] HTTP GET /api/Employee responded 200 in 29.9711 ms
+2026-05-29 12:06:41.123 +05:30 [INF] Executing endpoint 'EmployeeAPI.Controllers.EmployeeController.GetAll (EmployeeAPI)'
+2026-05-29 12:06:41.125 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/Employee - 200 null application/json; charset=utf-8 40.7886ms
+2026-05-29 12:06:41.127 +05:30 [INF] Route matched with {action = "GetAll", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller EmployeeAPI.Controllers.EmployeeController (EmployeeAPI).
+2026-05-29 12:06:41.135 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "e"."Id", "e"."Department", "e"."Email", "e"."Name", "e"."Salary"
+FROM "Employees" AS "e"
+2026-05-29 12:06:41.139 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType5`2[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[EmployeeAPI.Models.Employee, EmployeeAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-29 12:06:41.142 +05:30 [INF] Executed action EmployeeAPI.Controllers.EmployeeController.GetAll (EmployeeAPI) in 8.1658ms
+2026-05-29 12:06:41.144 +05:30 [INF] Executed endpoint 'EmployeeAPI.Controllers.EmployeeController.GetAll (EmployeeAPI)'
+2026-05-29 12:06:41.145 +05:30 [INF] HTTP GET /api/Employee responded 200 in 24.5333 ms
+2026-05-29 12:06:41.148 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/Employee - 200 null application/json; charset=utf-8 30.6041ms
+2026-05-29 12:09:25.027 +05:30 [INF] Application is shutting down...
+2026-05-29 12:09:50.174 +05:30 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-05-29 12:09:50.418 +05:30 [INF] Now listening on: http://0.0.0.0:5000
+2026-05-29 12:09:50.424 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-29 12:09:50.426 +05:30 [INF] Hosting environment: Development
+2026-05-29 12:09:50.427 +05:30 [INF] Content root path: C:\Users\user\OneDrive\文件\Desktop\EmployeeAPI\EmployeeAPI
+2026-05-29 12:09:50.738 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/Auth/login - null null
+2026-05-29 12:09:50.792 +05:30 [INF] CORS policy execution successful.
+2026-05-29 12:09:50.801 +05:30 [INF] HTTP OPTIONS /api/Auth/login responded 204 in 10.1824 ms
+2026-05-29 12:09:50.825 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/Auth/login - 204 null null 89.8751ms
+2026-05-29 12:09:50.840 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Auth/login - application/json 45
+2026-05-29 12:09:50.848 +05:30 [INF] CORS policy execution successful.
+2026-05-29 12:09:50.851 +05:30 [WRN] Failed to determine the https port for redirect.
+2026-05-29 12:09:51.000 +05:30 [INF] Executing endpoint 'EmployeeAPI.API.Controllers.AuthController.Login (EmployeeAPI)'
+2026-05-29 12:09:51.033 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(EmployeeAPI.Application.DTOs.LoginDto) on controller EmployeeAPI.API.Controllers.AuthController (EmployeeAPI).
+2026-05-29 12:09:53.016 +05:30 [INF] Executed DbCommand (16ms) [Parameters=[@__request_Username_0='?' (Size = 12)], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."Password", "u"."RefreshToken", "u"."RefreshTokenExpiry", "u"."Role", "u"."Username"
+FROM "Users" AS "u"
+WHERE "u"."Username" = @__request_Username_0
+LIMIT 1
+2026-05-29 12:09:54.126 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType3`2[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[<>f__AnonymousType2`3[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], EmployeeAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-29 12:09:54.172 +05:30 [INF] Executed action EmployeeAPI.API.Controllers.AuthController.Login (EmployeeAPI) in 3129.2623ms
+2026-05-29 12:09:54.175 +05:30 [INF] Executed endpoint 'EmployeeAPI.API.Controllers.AuthController.Login (EmployeeAPI)'
+2026-05-29 12:09:54.177 +05:30 [INF] HTTP POST /api/Auth/login responded 200 in 3329.3358 ms
+2026-05-29 12:09:54.191 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Auth/login - 200 null application/json; charset=utf-8 3351.0168ms
+2026-05-29 12:09:56.197 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/Employee - null null
+2026-05-29 12:09:56.197 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/Employee - null null
+2026-05-29 12:09:56.205 +05:30 [INF] CORS policy execution successful.
+2026-05-29 12:09:56.207 +05:30 [INF] CORS policy execution successful.
+2026-05-29 12:09:56.209 +05:30 [INF] HTTP OPTIONS /api/Employee responded 204 in 5.2482 ms
+2026-05-29 12:09:56.211 +05:30 [INF] HTTP OPTIONS /api/Employee responded 204 in 3.7568 ms
+2026-05-29 12:09:56.215 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/Employee - 204 null null 18.1029ms
+2026-05-29 12:09:56.218 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/Employee - 204 null null 20.4397ms
+2026-05-29 12:09:56.230 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/Employee - null null
+2026-05-29 12:09:56.244 +05:30 [INF] CORS policy execution successful.
+2026-05-29 12:09:56.255 +05:30 [INF] Executing endpoint 'EmployeeAPI.Controllers.EmployeeController.GetAll (EmployeeAPI)'
+2026-05-29 12:09:56.264 +05:30 [INF] Route matched with {action = "GetAll", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller EmployeeAPI.Controllers.EmployeeController (EmployeeAPI).
+2026-05-29 12:09:56.316 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "e"."Id", "e"."Department", "e"."Email", "e"."Name", "e"."Salary"
+FROM "Employees" AS "e"
+2026-05-29 12:09:56.343 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType5`2[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[EmployeeAPI.Models.Employee, EmployeeAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-29 12:09:56.366 +05:30 [INF] Executed action EmployeeAPI.Controllers.EmployeeController.GetAll (EmployeeAPI) in 97.0695ms
+2026-05-29 12:09:56.368 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/Employee - null null
+2026-05-29 12:09:56.369 +05:30 [INF] Executed endpoint 'EmployeeAPI.Controllers.EmployeeController.GetAll (EmployeeAPI)'
+2026-05-29 12:09:56.374 +05:30 [INF] CORS policy execution successful.
+2026-05-29 12:09:56.375 +05:30 [INF] HTTP GET /api/Employee responded 200 in 131.3289 ms
+2026-05-29 12:09:56.380 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/Employee - 200 null application/json; charset=utf-8 150.0721ms
+2026-05-29 12:09:56.383 +05:30 [INF] Executing endpoint 'EmployeeAPI.Controllers.EmployeeController.GetAll (EmployeeAPI)'
+2026-05-29 12:09:56.388 +05:30 [INF] Route matched with {action = "GetAll", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller EmployeeAPI.Controllers.EmployeeController (EmployeeAPI).
+2026-05-29 12:09:56.497 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "e"."Id", "e"."Department", "e"."Email", "e"."Name", "e"."Salary"
+FROM "Employees" AS "e"
+2026-05-29 12:09:56.502 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType5`2[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[EmployeeAPI.Models.Employee, EmployeeAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-29 12:09:56.505 +05:30 [INF] Executed action EmployeeAPI.Controllers.EmployeeController.GetAll (EmployeeAPI) in 113.3506ms
+2026-05-29 12:09:56.508 +05:30 [INF] Executed endpoint 'EmployeeAPI.Controllers.EmployeeController.GetAll (EmployeeAPI)'
+2026-05-29 12:09:56.510 +05:30 [INF] HTTP GET /api/Employee responded 200 in 135.5253 ms
+2026-05-29 12:09:56.512 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/Employee - 200 null application/json; charset=utf-8 144.855ms
+2026-05-29 12:10:11.272 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/Auth/register - null null
+2026-05-29 12:10:11.278 +05:30 [INF] CORS policy execution successful.
+2026-05-29 12:10:11.280 +05:30 [INF] HTTP OPTIONS /api/Auth/register responded 204 in 1.5065 ms
+2026-05-29 12:10:11.282 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/Auth/register - 204 null null 9.7614ms
+2026-05-29 12:10:11.287 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Auth/register - application/json 60
+2026-05-29 12:10:11.293 +05:30 [INF] CORS policy execution successful.
+2026-05-29 12:10:11.295 +05:30 [INF] Executing endpoint 'EmployeeAPI.API.Controllers.AuthController.Register (EmployeeAPI)'
+2026-05-29 12:10:11.304 +05:30 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(EmployeeAPI.Application.DTOs.RegisterDto) on controller EmployeeAPI.API.Controllers.AuthController (EmployeeAPI).
+2026-05-29 12:10:11.342 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__request_Username_0='?' (Size = 12)], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Users" AS "u"
+    WHERE "u"."Username" = @__request_Username_0)
+2026-05-29 12:10:11.348 +05:30 [INF] Executing BadRequestObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-29 12:10:11.351 +05:30 [INF] Executed action EmployeeAPI.API.Controllers.AuthController.Register (EmployeeAPI) in 43.7448ms
+2026-05-29 12:10:11.354 +05:30 [INF] Executed endpoint 'EmployeeAPI.API.Controllers.AuthController.Register (EmployeeAPI)'
+2026-05-29 12:10:11.355 +05:30 [INF] HTTP POST /api/Auth/register responded 400 in 62.8522 ms
+2026-05-29 12:10:11.358 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Auth/register - 400 null application/json; charset=utf-8 71.2649ms
+2026-05-29 12:10:21.093 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/Auth/login - null null
+2026-05-29 12:10:21.097 +05:30 [INF] CORS policy execution successful.
+2026-05-29 12:10:21.099 +05:30 [INF] HTTP OPTIONS /api/Auth/login responded 204 in 1.7682 ms
+2026-05-29 12:10:21.103 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/Auth/login - 204 null null 10.3026ms
+2026-05-29 12:10:21.109 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Auth/login - application/json 45
+2026-05-29 12:10:21.114 +05:30 [INF] CORS policy execution successful.
+2026-05-29 12:10:21.116 +05:30 [INF] Executing endpoint 'EmployeeAPI.API.Controllers.AuthController.Login (EmployeeAPI)'
+2026-05-29 12:10:21.118 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(EmployeeAPI.Application.DTOs.LoginDto) on controller EmployeeAPI.API.Controllers.AuthController (EmployeeAPI).
+2026-05-29 12:10:21.133 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[@__request_Username_0='?' (Size = 12)], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."Password", "u"."RefreshToken", "u"."RefreshTokenExpiry", "u"."Role", "u"."Username"
+FROM "Users" AS "u"
+WHERE "u"."Username" = @__request_Username_0
+LIMIT 1
+2026-05-29 12:10:21.439 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType3`2[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[<>f__AnonymousType2`3[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], EmployeeAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-29 12:10:21.442 +05:30 [INF] Executed action EmployeeAPI.API.Controllers.AuthController.Login (EmployeeAPI) in 319.986ms
+2026-05-29 12:10:21.445 +05:30 [INF] Executed endpoint 'EmployeeAPI.API.Controllers.AuthController.Login (EmployeeAPI)'
+2026-05-29 12:10:21.447 +05:30 [INF] HTTP POST /api/Auth/login responded 200 in 332.9780 ms
+2026-05-29 12:10:21.450 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Auth/login - 200 null application/json; charset=utf-8 341.2301ms
+2026-05-29 12:10:22.920 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/Employee - null null
+2026-05-29 12:10:22.924 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/Employee - null null
+2026-05-29 12:10:22.925 +05:30 [INF] CORS policy execution successful.
+2026-05-29 12:10:22.929 +05:30 [INF] CORS policy execution successful.
+2026-05-29 12:10:22.930 +05:30 [INF] HTTP OPTIONS /api/Employee responded 204 in 4.9689 ms
+2026-05-29 12:10:22.932 +05:30 [INF] HTTP OPTIONS /api/Employee responded 204 in 2.6247 ms
+2026-05-29 12:10:22.935 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/Employee - 204 null null 15.3266ms
+2026-05-29 12:10:22.937 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/Employee - 204 null null 13.9064ms
+2026-05-29 12:10:22.948 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/Employee - null null
+2026-05-29 12:10:22.954 +05:30 [INF] CORS policy execution successful.
+2026-05-29 12:10:22.958 +05:30 [INF] Executing endpoint 'EmployeeAPI.Controllers.EmployeeController.GetAll (EmployeeAPI)'
+2026-05-29 12:10:22.960 +05:30 [INF] Route matched with {action = "GetAll", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller EmployeeAPI.Controllers.EmployeeController (EmployeeAPI).
+2026-05-29 12:10:22.966 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "e"."Id", "e"."Department", "e"."Email", "e"."Name", "e"."Salary"
+FROM "Employees" AS "e"
+2026-05-29 12:10:22.971 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType5`2[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[EmployeeAPI.Models.Employee, EmployeeAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-29 12:10:22.974 +05:30 [INF] Executed action EmployeeAPI.Controllers.EmployeeController.GetAll (EmployeeAPI) in 9.9505ms
+2026-05-29 12:10:22.976 +05:30 [INF] Executed endpoint 'EmployeeAPI.Controllers.EmployeeController.GetAll (EmployeeAPI)'
+2026-05-29 12:10:22.976 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/Employee - null null
+2026-05-29 12:10:22.978 +05:30 [INF] HTTP GET /api/Employee responded 200 in 24.0159 ms
+2026-05-29 12:10:22.982 +05:30 [INF] CORS policy execution successful.
+2026-05-29 12:10:22.986 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/Employee - 200 null application/json; charset=utf-8 37.441ms
+2026-05-29 12:10:22.989 +05:30 [INF] Executing endpoint 'EmployeeAPI.Controllers.EmployeeController.GetAll (EmployeeAPI)'
+2026-05-29 12:10:22.996 +05:30 [INF] Route matched with {action = "GetAll", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller EmployeeAPI.Controllers.EmployeeController (EmployeeAPI).
+2026-05-29 12:10:23.002 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "e"."Id", "e"."Department", "e"."Email", "e"."Name", "e"."Salary"
+FROM "Employees" AS "e"
+2026-05-29 12:10:23.007 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType5`2[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[EmployeeAPI.Models.Employee, EmployeeAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-29 12:10:23.010 +05:30 [INF] Executed action EmployeeAPI.Controllers.EmployeeController.GetAll (EmployeeAPI) in 9.8628ms
+2026-05-29 12:10:23.013 +05:30 [INF] Executed endpoint 'EmployeeAPI.Controllers.EmployeeController.GetAll (EmployeeAPI)'
+2026-05-29 12:10:23.015 +05:30 [INF] HTTP GET /api/Employee responded 200 in 32.3899 ms
+2026-05-29 12:10:23.018 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/Employee - 200 null application/json; charset=utf-8 40.9989ms
+2026-05-29 12:11:02.604 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/Employee - null null
+2026-05-29 12:11:02.608 +05:30 [INF] CORS policy execution successful.
+2026-05-29 12:11:02.610 +05:30 [INF] HTTP OPTIONS /api/Employee responded 204 in 1.3643 ms
+2026-05-29 12:11:02.613 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/Employee - 204 null null 9.3702ms
+2026-05-29 12:11:02.618 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Employee - application/json 92
+2026-05-29 12:11:02.623 +05:30 [INF] CORS policy execution successful.
+2026-05-29 12:11:02.626 +05:30 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin)
+2026-05-29 12:11:02.632 +05:30 [INF] AuthenticationScheme: Bearer was forbidden.
+2026-05-29 12:11:02.633 +05:30 [INF] HTTP POST /api/Employee responded 403 in 10.6181 ms
+2026-05-29 12:11:02.637 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Employee - 403 0 null 18.5365ms
+2026-05-29 12:11:15.634 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/Employee - null null
+2026-05-29 12:11:15.639 +05:30 [INF] CORS policy execution successful.
+2026-05-29 12:11:15.640 +05:30 [INF] HTTP OPTIONS /api/Employee responded 204 in 1.6365 ms
+2026-05-29 12:11:15.643 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/Employee - 204 null null 9.4448ms
+2026-05-29 12:11:15.648 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Employee - application/json 92
+2026-05-29 12:11:15.652 +05:30 [INF] CORS policy execution successful.
+2026-05-29 12:11:15.655 +05:30 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin)
+2026-05-29 12:11:15.657 +05:30 [INF] AuthenticationScheme: Bearer was forbidden.
+2026-05-29 12:11:15.659 +05:30 [INF] HTTP POST /api/Employee responded 403 in 6.5835 ms
+2026-05-29 12:11:15.663 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Employee - 403 0 null 14.6151ms
+2026-05-29 12:29:41.047 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5000/ - null null
+2026-05-29 12:29:41.054 +05:30 [INF] HTTP GET / responded 404 in 0.2831 ms
+2026-05-29 12:29:41.057 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5000/ - 404 0 null 10.6037ms
+2026-05-29 12:29:41.064 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5000/, Response status code: 404
+2026-05-29 12:29:53.123 +05:30 [INF] Application is shutting down...
+2026-05-29 12:30:18.234 +05:30 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-05-29 12:30:18.461 +05:30 [INF] Now listening on: http://0.0.0.0:5000
+2026-05-29 12:30:18.467 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-29 12:30:18.469 +05:30 [INF] Hosting environment: Development
+2026-05-29 12:30:18.470 +05:30 [INF] Content root path: C:\Users\user\OneDrive\文件\Desktop\EmployeeAPI\EmployeeAPI
+2026-05-29 12:30:55.075 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/Auth/login - null null
+2026-05-29 12:30:55.134 +05:30 [INF] CORS policy execution successful.
+2026-05-29 12:30:55.144 +05:30 [INF] HTTP OPTIONS /api/Auth/login responded 204 in 13.1832 ms
+2026-05-29 12:30:55.188 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/Auth/login - 204 null null 116.1793ms
+2026-05-29 12:30:55.206 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Auth/login - application/json 45
+2026-05-29 12:30:55.216 +05:30 [INF] CORS policy execution successful.
+2026-05-29 12:30:55.219 +05:30 [WRN] Failed to determine the https port for redirect.
+2026-05-29 12:30:55.392 +05:30 [INF] Executing endpoint 'EmployeeAPI.API.Controllers.AuthController.Login (EmployeeAPI)'
+2026-05-29 12:30:55.426 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(EmployeeAPI.Application.DTOs.LoginDto) on controller EmployeeAPI.API.Controllers.AuthController (EmployeeAPI).
+2026-05-29 12:30:57.678 +05:30 [INF] Executed DbCommand (23ms) [Parameters=[@__request_Username_0='?' (Size = 12)], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."Password", "u"."RefreshToken", "u"."RefreshTokenExpiry", "u"."Role", "u"."Username"
+FROM "Users" AS "u"
+WHERE "u"."Username" = @__request_Username_0
+LIMIT 1
+2026-05-29 12:30:58.791 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType3`2[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[<>f__AnonymousType2`3[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], EmployeeAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-29 12:30:58.836 +05:30 [INF] Executed action EmployeeAPI.API.Controllers.AuthController.Login (EmployeeAPI) in 3401.3562ms
+2026-05-29 12:30:58.839 +05:30 [INF] Executed endpoint 'EmployeeAPI.API.Controllers.AuthController.Login (EmployeeAPI)'
+2026-05-29 12:30:58.841 +05:30 [INF] HTTP POST /api/Auth/login responded 200 in 3626.1320 ms
+2026-05-29 12:30:58.855 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Auth/login - 200 null application/json; charset=utf-8 3649.7469ms
+2026-05-29 12:31:00.432 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/Employee - null null
+2026-05-29 12:31:00.432 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/Employee - null null
+2026-05-29 12:31:00.440 +05:30 [INF] CORS policy execution successful.
+2026-05-29 12:31:00.442 +05:30 [INF] CORS policy execution successful.
+2026-05-29 12:31:00.443 +05:30 [INF] HTTP OPTIONS /api/Employee responded 204 in 3.9385 ms
+2026-05-29 12:31:00.444 +05:30 [INF] HTTP OPTIONS /api/Employee responded 204 in 2.7037 ms
+2026-05-29 12:31:00.448 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/Employee - 204 null null 16.0451ms
+2026-05-29 12:31:00.453 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/Employee - 204 null null 20.1395ms
+2026-05-29 12:31:00.465 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/Employee - null null
+2026-05-29 12:31:00.477 +05:30 [INF] CORS policy execution successful.
+2026-05-29 12:31:00.490 +05:30 [INF] Executing endpoint 'EmployeeAPI.Controllers.EmployeeController.GetAll (EmployeeAPI)'
+2026-05-29 12:31:00.499 +05:30 [INF] Route matched with {action = "GetAll", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller EmployeeAPI.Controllers.EmployeeController (EmployeeAPI).
+2026-05-29 12:31:00.546 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "e"."Id", "e"."Department", "e"."Email", "e"."Name", "e"."Salary"
+FROM "Employees" AS "e"
+2026-05-29 12:31:00.576 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType5`2[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[EmployeeAPI.Models.Employee, EmployeeAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-29 12:31:00.600 +05:30 [INF] Executed action EmployeeAPI.Controllers.EmployeeController.GetAll (EmployeeAPI) in 96.9428ms
+2026-05-29 12:31:00.603 +05:30 [INF] Executed endpoint 'EmployeeAPI.Controllers.EmployeeController.GetAll (EmployeeAPI)'
+2026-05-29 12:31:00.604 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/Employee - null null
+2026-05-29 12:31:00.605 +05:30 [INF] HTTP GET /api/Employee responded 200 in 128.2388 ms
+2026-05-29 12:31:00.611 +05:30 [INF] CORS policy execution successful.
+2026-05-29 12:31:00.614 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/Employee - 200 null application/json; charset=utf-8 148.486ms
+2026-05-29 12:31:00.622 +05:30 [INF] Executing endpoint 'EmployeeAPI.Controllers.EmployeeController.GetAll (EmployeeAPI)'
+2026-05-29 12:31:00.624 +05:30 [INF] Route matched with {action = "GetAll", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller EmployeeAPI.Controllers.EmployeeController (EmployeeAPI).
+2026-05-29 12:31:00.740 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "e"."Id", "e"."Department", "e"."Email", "e"."Name", "e"."Salary"
+FROM "Employees" AS "e"
+2026-05-29 12:31:00.744 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType5`2[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[EmployeeAPI.Models.Employee, EmployeeAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-29 12:31:00.746 +05:30 [INF] Executed action EmployeeAPI.Controllers.EmployeeController.GetAll (EmployeeAPI) in 118.2983ms
+2026-05-29 12:31:00.749 +05:30 [INF] Executed endpoint 'EmployeeAPI.Controllers.EmployeeController.GetAll (EmployeeAPI)'
+2026-05-29 12:31:00.751 +05:30 [INF] HTTP GET /api/Employee responded 200 in 139.7506 ms
+2026-05-29 12:31:00.754 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/Employee - 200 null application/json; charset=utf-8 150.6194ms
+2026-05-29 12:33:11.956 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - null null
+2026-05-29 12:33:12.063 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - 200 null text/html;charset=utf-8 107.5138ms
+2026-05-29 12:33:12.484 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - null null
+2026-05-29 12:33:12.652 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 168.2069ms
+2026-05-29 12:34:02.370 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/Auth/register - null null
+2026-05-29 12:34:02.375 +05:30 [INF] CORS policy execution successful.
+2026-05-29 12:34:02.376 +05:30 [INF] HTTP OPTIONS /api/Auth/register responded 204 in 1.5166 ms
+2026-05-29 12:34:02.382 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/Auth/register - 204 null null 12.1959ms
+2026-05-29 12:34:02.387 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Auth/register - application/json 56
+2026-05-29 12:34:02.392 +05:30 [INF] CORS policy execution successful.
+2026-05-29 12:34:02.394 +05:30 [INF] Executing endpoint 'EmployeeAPI.API.Controllers.AuthController.Register (EmployeeAPI)'
+2026-05-29 12:34:02.401 +05:30 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(EmployeeAPI.Application.DTOs.RegisterDto) on controller EmployeeAPI.API.Controllers.AuthController (EmployeeAPI).
+2026-05-29 12:34:02.437 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__request_Username_0='?' (Size = 8)], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Users" AS "u"
+    WHERE "u"."Username" = @__request_Username_0)
+2026-05-29 12:34:02.444 +05:30 [INF] Executing BadRequestObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-29 12:34:02.448 +05:30 [INF] Executed action EmployeeAPI.API.Controllers.AuthController.Register (EmployeeAPI) in 42.7326ms
+2026-05-29 12:34:02.451 +05:30 [INF] Executed endpoint 'EmployeeAPI.API.Controllers.AuthController.Register (EmployeeAPI)'
+2026-05-29 12:34:02.453 +05:30 [INF] HTTP POST /api/Auth/register responded 400 in 60.6322 ms
+2026-05-29 12:34:02.456 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Auth/register - 400 null application/json; charset=utf-8 68.9854ms
+2026-05-29 12:34:10.065 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/Auth/register - null null
+2026-05-29 12:34:10.069 +05:30 [INF] CORS policy execution successful.
+2026-05-29 12:34:10.071 +05:30 [INF] HTTP OPTIONS /api/Auth/register responded 204 in 1.7102 ms
+2026-05-29 12:34:10.075 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/Auth/register - 204 null null 9.849ms
+2026-05-29 12:34:10.080 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Auth/register - application/json 60
+2026-05-29 12:34:10.083 +05:30 [INF] CORS policy execution successful.
+2026-05-29 12:34:10.085 +05:30 [INF] Executing endpoint 'EmployeeAPI.API.Controllers.AuthController.Register (EmployeeAPI)'
+2026-05-29 12:34:10.087 +05:30 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(EmployeeAPI.Application.DTOs.RegisterDto) on controller EmployeeAPI.API.Controllers.AuthController (EmployeeAPI).
+2026-05-29 12:34:10.099 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[@__request_Username_0='?' (Size = 12)], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Users" AS "u"
+    WHERE "u"."Username" = @__request_Username_0)
+2026-05-29 12:34:10.103 +05:30 [INF] Executing BadRequestObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-29 12:34:10.105 +05:30 [INF] Executed action EmployeeAPI.API.Controllers.AuthController.Register (EmployeeAPI) in 14.8338ms
+2026-05-29 12:34:10.108 +05:30 [INF] Executed endpoint 'EmployeeAPI.API.Controllers.AuthController.Register (EmployeeAPI)'
+2026-05-29 12:34:10.110 +05:30 [INF] HTTP POST /api/Auth/register responded 400 in 26.9971 ms
+2026-05-29 12:34:10.114 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Auth/register - 400 null application/json; charset=utf-8 33.9801ms
+2026-05-29 12:34:14.816 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/Auth/login - null null
+2026-05-29 12:34:14.820 +05:30 [INF] CORS policy execution successful.
+2026-05-29 12:34:14.822 +05:30 [INF] HTTP OPTIONS /api/Auth/login responded 204 in 1.5871 ms
+2026-05-29 12:34:14.828 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/Auth/login - 204 null null 11.6247ms
+2026-05-29 12:34:14.833 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Auth/login - application/json 41
+2026-05-29 12:34:14.837 +05:30 [INF] CORS policy execution successful.
+2026-05-29 12:34:14.839 +05:30 [INF] Executing endpoint 'EmployeeAPI.API.Controllers.AuthController.Login (EmployeeAPI)'
+2026-05-29 12:34:14.841 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(EmployeeAPI.Application.DTOs.LoginDto) on controller EmployeeAPI.API.Controllers.AuthController (EmployeeAPI).
+2026-05-29 12:34:14.846 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[@__request_Username_0='?' (Size = 8)], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."Password", "u"."RefreshToken", "u"."RefreshTokenExpiry", "u"."Role", "u"."Username"
+FROM "Users" AS "u"
+WHERE "u"."Username" = @__request_Username_0
+LIMIT 1
+2026-05-29 12:34:15.131 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType3`2[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[<>f__AnonymousType2`3[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], EmployeeAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-29 12:34:15.134 +05:30 [INF] Executed action EmployeeAPI.API.Controllers.AuthController.Login (EmployeeAPI) in 290.3126ms
+2026-05-29 12:34:15.137 +05:30 [INF] Executed endpoint 'EmployeeAPI.API.Controllers.AuthController.Login (EmployeeAPI)'
+2026-05-29 12:34:15.142 +05:30 [INF] HTTP POST /api/Auth/login responded 200 in 304.9732 ms
+2026-05-29 12:34:15.145 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Auth/login - 200 null application/json; charset=utf-8 311.9124ms
+2026-05-29 12:34:16.871 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/Employee - null null
+2026-05-29 12:34:16.872 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/Employee - null null
+2026-05-29 12:34:16.878 +05:30 [INF] CORS policy execution successful.
+2026-05-29 12:34:16.882 +05:30 [INF] CORS policy execution successful.
+2026-05-29 12:34:16.883 +05:30 [INF] HTTP OPTIONS /api/Employee responded 204 in 5.5099 ms
+2026-05-29 12:34:16.885 +05:30 [INF] HTTP OPTIONS /api/Employee responded 204 in 3.1417 ms
+2026-05-29 12:34:16.888 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/Employee - 204 null null 17.035ms
+2026-05-29 12:34:16.892 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/Employee - 204 null null 20.0258ms
+2026-05-29 12:34:16.898 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/Employee - null null
+2026-05-29 12:34:16.908 +05:30 [INF] CORS policy execution successful.
+2026-05-29 12:34:16.913 +05:30 [INF] Executing endpoint 'EmployeeAPI.Controllers.EmployeeController.GetAll (EmployeeAPI)'
+2026-05-29 12:34:16.915 +05:30 [INF] Route matched with {action = "GetAll", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller EmployeeAPI.Controllers.EmployeeController (EmployeeAPI).
+2026-05-29 12:34:16.921 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "e"."Id", "e"."Department", "e"."Email", "e"."Name", "e"."Salary"
+FROM "Employees" AS "e"
+2026-05-29 12:34:16.926 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType5`2[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[EmployeeAPI.Models.Employee, EmployeeAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-29 12:34:16.929 +05:30 [INF] Executed action EmployeeAPI.Controllers.EmployeeController.GetAll (EmployeeAPI) in 10.8841ms
+2026-05-29 12:34:16.931 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/Employee - null null
+2026-05-29 12:34:16.932 +05:30 [INF] Executed endpoint 'EmployeeAPI.Controllers.EmployeeController.GetAll (EmployeeAPI)'
+2026-05-29 12:34:16.937 +05:30 [INF] CORS policy execution successful.
+2026-05-29 12:34:16.939 +05:30 [INF] HTTP GET /api/Employee responded 200 in 30.5572 ms
+2026-05-29 12:34:16.941 +05:30 [INF] Executing endpoint 'EmployeeAPI.Controllers.EmployeeController.GetAll (EmployeeAPI)'
+2026-05-29 12:34:16.944 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/Employee - 200 null application/json; charset=utf-8 46.1365ms
+2026-05-29 12:34:16.946 +05:30 [INF] Route matched with {action = "GetAll", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller EmployeeAPI.Controllers.EmployeeController (EmployeeAPI).
+2026-05-29 12:34:16.956 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "e"."Id", "e"."Department", "e"."Email", "e"."Name", "e"."Salary"
+FROM "Employees" AS "e"
+2026-05-29 12:34:16.961 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType5`2[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[EmployeeAPI.Models.Employee, EmployeeAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-29 12:34:16.964 +05:30 [INF] Executed action EmployeeAPI.Controllers.EmployeeController.GetAll (EmployeeAPI) in 9.6766ms
+2026-05-29 12:34:16.966 +05:30 [INF] Executed endpoint 'EmployeeAPI.Controllers.EmployeeController.GetAll (EmployeeAPI)'
+2026-05-29 12:34:16.968 +05:30 [INF] HTTP GET /api/Employee responded 200 in 31.1927 ms
+2026-05-29 12:34:16.971 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/Employee - 200 null application/json; charset=utf-8 40.0524ms
+2026-05-29 12:34:33.182 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/Auth/login - null null
+2026-05-29 12:34:33.187 +05:30 [INF] CORS policy execution successful.
+2026-05-29 12:34:33.188 +05:30 [INF] HTTP OPTIONS /api/Auth/login responded 204 in 1.5545 ms
+2026-05-29 12:34:33.194 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/Auth/login - 204 null null 11.4544ms
+2026-05-29 12:34:33.199 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Auth/login - application/json 45
+2026-05-29 12:34:33.204 +05:30 [INF] CORS policy execution successful.
+2026-05-29 12:34:33.206 +05:30 [INF] Executing endpoint 'EmployeeAPI.API.Controllers.AuthController.Login (EmployeeAPI)'
+2026-05-29 12:34:33.208 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(EmployeeAPI.Application.DTOs.LoginDto) on controller EmployeeAPI.API.Controllers.AuthController (EmployeeAPI).
+2026-05-29 12:34:33.214 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[@__request_Username_0='?' (Size = 12)], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."Password", "u"."RefreshToken", "u"."RefreshTokenExpiry", "u"."Role", "u"."Username"
+FROM "Users" AS "u"
+WHERE "u"."Username" = @__request_Username_0
+LIMIT 1
+2026-05-29 12:34:33.511 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType3`2[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[<>f__AnonymousType2`3[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], EmployeeAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-29 12:34:33.515 +05:30 [INF] Executed action EmployeeAPI.API.Controllers.AuthController.Login (EmployeeAPI) in 303.2131ms
+2026-05-29 12:34:33.517 +05:30 [INF] Executed endpoint 'EmployeeAPI.API.Controllers.AuthController.Login (EmployeeAPI)'
+2026-05-29 12:34:33.518 +05:30 [INF] HTTP POST /api/Auth/login responded 200 in 314.7932 ms
+2026-05-29 12:34:33.521 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Auth/login - 200 null application/json; charset=utf-8 322.0456ms
+2026-05-29 12:34:35.140 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/Employee - null null
+2026-05-29 12:34:35.141 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/Employee - null null
+2026-05-29 12:34:35.144 +05:30 [INF] CORS policy execution successful.
+2026-05-29 12:34:35.148 +05:30 [INF] CORS policy execution successful.
+2026-05-29 12:34:35.150 +05:30 [INF] HTTP OPTIONS /api/Employee responded 204 in 5.8495 ms
+2026-05-29 12:34:35.151 +05:30 [INF] HTTP OPTIONS /api/Employee responded 204 in 3.3016 ms
+2026-05-29 12:34:35.155 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/Employee - 204 null null 14.5149ms
+2026-05-29 12:34:35.158 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/Employee - 204 null null 17.2827ms
+2026-05-29 12:34:35.163 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/Employee - null null
+2026-05-29 12:34:35.173 +05:30 [INF] CORS policy execution successful.
+2026-05-29 12:34:35.176 +05:30 [INF] Executing endpoint 'EmployeeAPI.Controllers.EmployeeController.GetAll (EmployeeAPI)'
+2026-05-29 12:34:35.178 +05:30 [INF] Route matched with {action = "GetAll", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller EmployeeAPI.Controllers.EmployeeController (EmployeeAPI).
+2026-05-29 12:34:35.182 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "e"."Id", "e"."Department", "e"."Email", "e"."Name", "e"."Salary"
+FROM "Employees" AS "e"
+2026-05-29 12:34:35.187 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType5`2[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[EmployeeAPI.Models.Employee, EmployeeAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-29 12:34:35.190 +05:30 [INF] Executed action EmployeeAPI.Controllers.EmployeeController.GetAll (EmployeeAPI) in 8.7127ms
+2026-05-29 12:34:35.191 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/Employee - null null
+2026-05-29 12:34:35.193 +05:30 [INF] Executed endpoint 'EmployeeAPI.Controllers.EmployeeController.GetAll (EmployeeAPI)'
+2026-05-29 12:34:35.197 +05:30 [INF] CORS policy execution successful.
+2026-05-29 12:34:35.199 +05:30 [INF] HTTP GET /api/Employee responded 200 in 25.3116 ms
+2026-05-29 12:34:35.200 +05:30 [INF] Executing endpoint 'EmployeeAPI.Controllers.EmployeeController.GetAll (EmployeeAPI)'
+2026-05-29 12:34:35.203 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/Employee - 200 null application/json; charset=utf-8 39.4491ms
+2026-05-29 12:34:35.205 +05:30 [INF] Route matched with {action = "GetAll", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller EmployeeAPI.Controllers.EmployeeController (EmployeeAPI).
+2026-05-29 12:34:35.215 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "e"."Id", "e"."Department", "e"."Email", "e"."Name", "e"."Salary"
+FROM "Employees" AS "e"
+2026-05-29 12:34:35.220 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType5`2[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[EmployeeAPI.Models.Employee, EmployeeAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-29 12:34:35.222 +05:30 [INF] Executed action EmployeeAPI.Controllers.EmployeeController.GetAll (EmployeeAPI) in 8.6841ms
+2026-05-29 12:34:35.225 +05:30 [INF] Executed endpoint 'EmployeeAPI.Controllers.EmployeeController.GetAll (EmployeeAPI)'
+2026-05-29 12:34:35.227 +05:30 [INF] HTTP GET /api/Employee responded 200 in 30.4875 ms
+2026-05-29 12:34:35.230 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/Employee - 200 null application/json; charset=utf-8 38.9808ms
+2026-05-29 12:35:06.209 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/Auth/register - null null
+2026-05-29 12:35:06.213 +05:30 [INF] CORS policy execution successful.
+2026-05-29 12:35:06.214 +05:30 [INF] HTTP OPTIONS /api/Auth/register responded 204 in 1.3384 ms
+2026-05-29 12:35:06.218 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/Auth/register - 204 null null 9.0847ms
+2026-05-29 12:35:06.223 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Auth/register - application/json 59
+2026-05-29 12:35:06.227 +05:30 [INF] CORS policy execution successful.
+2026-05-29 12:35:06.230 +05:30 [INF] Executing endpoint 'EmployeeAPI.API.Controllers.AuthController.Register (EmployeeAPI)'
+2026-05-29 12:35:06.232 +05:30 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(EmployeeAPI.Application.DTOs.RegisterDto) on controller EmployeeAPI.API.Controllers.AuthController (EmployeeAPI).
+2026-05-29 12:35:06.238 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[@__request_Username_0='?' (Size = 11)], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Users" AS "u"
+    WHERE "u"."Username" = @__request_Username_0)
+2026-05-29 12:35:06.692 +05:30 [INF] Executed DbCommand (18ms) [Parameters=[@p0='?' (Size = 60), @p1='?', @p2='?' (DbType = DateTime), @p3='?' (Size = 5), @p4='?' (Size = 11)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Users" ("Password", "RefreshToken", "RefreshTokenExpiry", "Role", "Username")
+VALUES (@p0, @p1, @p2, @p3, @p4)
+RETURNING "Id";
+2026-05-29 12:35:06.739 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`2[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[<>f__AnonymousType2`3[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], EmployeeAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-29 12:35:06.744 +05:30 [INF] Executed action EmployeeAPI.API.Controllers.AuthController.Register (EmployeeAPI) in 508.8486ms
+2026-05-29 12:35:06.747 +05:30 [INF] Executed endpoint 'EmployeeAPI.API.Controllers.AuthController.Register (EmployeeAPI)'
+2026-05-29 12:35:06.749 +05:30 [INF] HTTP POST /api/Auth/register responded 200 in 521.6410 ms
+2026-05-29 12:35:06.752 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Auth/register - 200 null application/json; charset=utf-8 529.0653ms
+2026-05-29 12:35:17.585 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/Auth/login - null null
+2026-05-29 12:35:17.591 +05:30 [INF] CORS policy execution successful.
+2026-05-29 12:35:17.592 +05:30 [INF] HTTP OPTIONS /api/Auth/login responded 204 in 1.7319 ms
+2026-05-29 12:35:17.596 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/Auth/login - 204 null null 10.4292ms
+2026-05-29 12:35:17.602 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Auth/login - application/json 44
+2026-05-29 12:35:17.607 +05:30 [INF] CORS policy execution successful.
+2026-05-29 12:35:17.609 +05:30 [INF] Executing endpoint 'EmployeeAPI.API.Controllers.AuthController.Login (EmployeeAPI)'
+2026-05-29 12:35:17.611 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(EmployeeAPI.Application.DTOs.LoginDto) on controller EmployeeAPI.API.Controllers.AuthController (EmployeeAPI).
+2026-05-29 12:35:17.617 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[@__request_Username_0='?' (Size = 11)], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."Password", "u"."RefreshToken", "u"."RefreshTokenExpiry", "u"."Role", "u"."Username"
+FROM "Users" AS "u"
+WHERE "u"."Username" = @__request_Username_0
+LIMIT 1
+2026-05-29 12:35:17.921 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType3`2[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[<>f__AnonymousType2`3[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], EmployeeAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-29 12:35:17.924 +05:30 [INF] Executed action EmployeeAPI.API.Controllers.AuthController.Login (EmployeeAPI) in 309.535ms
+2026-05-29 12:35:17.926 +05:30 [INF] Executed endpoint 'EmployeeAPI.API.Controllers.AuthController.Login (EmployeeAPI)'
+2026-05-29 12:35:17.928 +05:30 [INF] HTTP POST /api/Auth/login responded 200 in 321.7014 ms
+2026-05-29 12:35:17.931 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Auth/login - 200 null application/json; charset=utf-8 329.5675ms
+2026-05-29 12:35:19.553 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/Employee - null null
+2026-05-29 12:35:19.559 +05:30 [INF] CORS policy execution successful.
+2026-05-29 12:35:19.561 +05:30 [INF] HTTP OPTIONS /api/Employee responded 204 in 2.0240 ms
+2026-05-29 12:35:19.564 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/Employee - 204 null null 10.9169ms
+2026-05-29 12:35:19.570 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/Employee - null null
+2026-05-29 12:35:19.575 +05:30 [INF] CORS policy execution successful.
+2026-05-29 12:35:19.578 +05:30 [INF] Executing endpoint 'EmployeeAPI.Controllers.EmployeeController.GetAll (EmployeeAPI)'
+2026-05-29 12:35:19.581 +05:30 [INF] Route matched with {action = "GetAll", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller EmployeeAPI.Controllers.EmployeeController (EmployeeAPI).
+2026-05-29 12:35:19.586 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "e"."Id", "e"."Department", "e"."Email", "e"."Name", "e"."Salary"
+FROM "Employees" AS "e"
+2026-05-29 12:35:19.592 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType5`2[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[EmployeeAPI.Models.Employee, EmployeeAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-29 12:35:19.596 +05:30 [INF] Executed action EmployeeAPI.Controllers.EmployeeController.GetAll (EmployeeAPI) in 10.946ms
+2026-05-29 12:35:19.598 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/Employee - null null
+2026-05-29 12:35:19.600 +05:30 [INF] Executed endpoint 'EmployeeAPI.Controllers.EmployeeController.GetAll (EmployeeAPI)'
+2026-05-29 12:35:19.605 +05:30 [INF] CORS policy execution successful.
+2026-05-29 12:35:19.607 +05:30 [INF] HTTP GET /api/Employee responded 200 in 31.1144 ms
+2026-05-29 12:35:19.611 +05:30 [INF] Executing endpoint 'EmployeeAPI.Controllers.EmployeeController.GetAll (EmployeeAPI)'
+2026-05-29 12:35:19.614 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/Employee - 200 null application/json; charset=utf-8 43.7914ms
+2026-05-29 12:35:19.616 +05:30 [INF] Route matched with {action = "GetAll", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller EmployeeAPI.Controllers.EmployeeController (EmployeeAPI).
+2026-05-29 12:35:19.644 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "e"."Id", "e"."Department", "e"."Email", "e"."Name", "e"."Salary"
+FROM "Employees" AS "e"
+2026-05-29 12:35:19.649 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType5`2[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[EmployeeAPI.Models.Employee, EmployeeAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-29 12:35:19.652 +05:30 [INF] Executed action EmployeeAPI.Controllers.EmployeeController.GetAll (EmployeeAPI) in 26.9798ms
+2026-05-29 12:35:19.655 +05:30 [INF] Executed endpoint 'EmployeeAPI.Controllers.EmployeeController.GetAll (EmployeeAPI)'
+2026-05-29 12:35:19.657 +05:30 [INF] HTTP GET /api/Employee responded 200 in 52.1014 ms
+2026-05-29 12:35:19.660 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/Employee - 200 null application/json; charset=utf-8 62.6755ms
+2026-05-29 12:36:00.006 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/Employee - null null
+2026-05-29 12:36:00.012 +05:30 [INF] CORS policy execution successful.
+2026-05-29 12:36:00.013 +05:30 [INF] HTTP OPTIONS /api/Employee responded 204 in 1.4564 ms
+2026-05-29 12:36:00.020 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/Employee - 204 null null 14.4629ms
+2026-05-29 12:36:00.029 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Employee - application/json 89
+2026-05-29 12:36:00.033 +05:30 [INF] CORS policy execution successful.
+2026-05-29 12:36:00.038 +05:30 [INF] Executing endpoint 'EmployeeAPI.Controllers.EmployeeController.Create (EmployeeAPI)'
+2026-05-29 12:36:00.045 +05:30 [INF] Route matched with {action = "Create", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(EmployeeAPI.DTOs.EmployeeDto) on controller EmployeeAPI.Controllers.EmployeeController (EmployeeAPI).
+2026-05-29 12:36:00.076 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@p0='?' (Size = 4), @p1='?' (Size = 16), @p2='?' (Size = 12), @p3='?' (DbType = Decimal)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Employees" ("Department", "Email", "Name", "Salary")
+VALUES (@p0, @p1, @p2, @p3)
+RETURNING "Id";
+2026-05-29 12:36:00.094 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType4`2[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[EmployeeAPI.Models.Employee, EmployeeAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-29 12:36:00.099 +05:30 [INF] Executed action EmployeeAPI.Controllers.EmployeeController.Create (EmployeeAPI) in 50.4496ms
+2026-05-29 12:36:00.101 +05:30 [INF] Executed endpoint 'EmployeeAPI.Controllers.EmployeeController.Create (EmployeeAPI)'
+2026-05-29 12:36:00.103 +05:30 [INF] HTTP POST /api/Employee responded 200 in 70.1125 ms
+2026-05-29 12:36:00.107 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Employee - 200 null application/json; charset=utf-8 78.0746ms
+2026-05-29 12:36:01.541 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/Employee - null null
+2026-05-29 12:36:01.546 +05:30 [INF] CORS policy execution successful.
+2026-05-29 12:36:01.548 +05:30 [INF] Executing endpoint 'EmployeeAPI.Controllers.EmployeeController.GetAll (EmployeeAPI)'
+2026-05-29 12:36:01.550 +05:30 [INF] Route matched with {action = "GetAll", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller EmployeeAPI.Controllers.EmployeeController (EmployeeAPI).
+2026-05-29 12:36:01.555 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "e"."Id", "e"."Department", "e"."Email", "e"."Name", "e"."Salary"
+FROM "Employees" AS "e"
+2026-05-29 12:36:01.559 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType5`2[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[EmployeeAPI.Models.Employee, EmployeeAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-29 12:36:01.562 +05:30 [INF] Executed action EmployeeAPI.Controllers.EmployeeController.GetAll (EmployeeAPI) in 8.685ms
+2026-05-29 12:36:01.564 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/Employee - null null
+2026-05-29 12:36:01.565 +05:30 [INF] Executed endpoint 'EmployeeAPI.Controllers.EmployeeController.GetAll (EmployeeAPI)'
+2026-05-29 12:36:01.569 +05:30 [INF] CORS policy execution successful.
+2026-05-29 12:36:01.570 +05:30 [INF] HTTP GET /api/Employee responded 200 in 24.3282 ms
+2026-05-29 12:36:01.572 +05:30 [INF] Executing endpoint 'EmployeeAPI.Controllers.EmployeeController.GetAll (EmployeeAPI)'
+2026-05-29 12:36:01.576 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/Employee - 200 null application/json; charset=utf-8 35.2396ms
+2026-05-29 12:36:01.578 +05:30 [INF] Route matched with {action = "GetAll", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller EmployeeAPI.Controllers.EmployeeController (EmployeeAPI).
+2026-05-29 12:36:01.587 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "e"."Id", "e"."Department", "e"."Email", "e"."Name", "e"."Salary"
+FROM "Employees" AS "e"
+2026-05-29 12:36:01.591 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType5`2[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[EmployeeAPI.Models.Employee, EmployeeAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-29 12:36:01.594 +05:30 [INF] Executed action EmployeeAPI.Controllers.EmployeeController.GetAll (EmployeeAPI) in 7.8385ms
+2026-05-29 12:36:01.596 +05:30 [INF] Executed endpoint 'EmployeeAPI.Controllers.EmployeeController.GetAll (EmployeeAPI)'
+2026-05-29 12:36:01.598 +05:30 [INF] HTTP GET /api/Employee responded 200 in 29.5245 ms
+2026-05-29 12:36:01.602 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/Employee - 200 null application/json; charset=utf-8 37.7647ms
+2026-05-29 12:44:11.393 +05:30 [INF] Application is shutting down...
